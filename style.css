@@ -52,6 +52,11 @@
 .copy {
     font-size: 1.3rem;
     margin-top: -5px;
+    cursor: pointer;
+    }
+    
+    .copy:active {
+        border: 2px solid rgb(202, 198, 198);
 }
 
 #length-range-yellow {

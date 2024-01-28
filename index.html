@@ -11,13 +11,33 @@
             <h2 class="title"></h2>
         </div>
         <div class="main-container">
-            <div class="item passward-field">Password Fieled</div>
-            <div class="item range">range</div>
-            <div class="item password-length">Passward length </div>
-            <div class="item lowercase">Include Lowercase letters(a-z)</div>
-            <div class="item uppercase">Include Uppercase letters(A-Z)</div>
-            <div class="item numbers">Include Numbers(0,9)</div>
-            <div class="item symbols">Include Numbers(@,%,...)</div>
+            <div class="item passward-field">
+                <span class="password">Password Field</span>
+                <span class="copy" > ❏ </span>
+            </div>
+            <div class="item range">
+                <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+            </div>
+            <div class="item password-length">
+                <span class="pass-length-label">Passward length </span>
+                <span class="pass-length-text">23</span>
+            </div>
+            <div class="item lowercase">
+                <label for="lower-checkbox">Include Lowercase letters(a-z)</label>
+                <input type="checkbox" id="lower-checkbox" name="lower-checkbox">
+            </div>
+            <div class="item uppercase">
+                <label for="uppper-checkbox">Include Uppercase letters(A-Z)</label>
+                <input type="checkbox" id="upper-checkbox" name="upper-checkbox">
+            </div>
+            <div class="item numbers">
+                <label for="numbers-checkbox">Include numbers(0,9)</label>
+                <input type="checkbox" id="numbers-checkbox" name="numbers-checkbox">
+            </div>
+            <div class="item symbols">
+                <label for="symbols-checkbox">Include Numbers(@,%,...)</label>
+                <input type="checkbox" id="symbols-checkbox" name="symbols-checkbox">
+            </div>
         </div>
         <div class="bottom_btn">
             <div class="btn btn-generate">Generate Password</div>

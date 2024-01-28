@@ -1,0 +1,61 @@
+/* 
+    first remove the default padding and the margin of the elements
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Courier;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: auto;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4vh 4vw;
+    background-color: aquamarine;
+    justify-content: center;
+}
+
+.header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 2vh 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-container .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password-field {
+    padding: 5px;
+    font-weight: 600;
+    background-color: rgb(202, 198, 198);
+
+}
+
+.copy {
+    font-size: 1.3rem;
+    margin-top: -5px;
+}
+
+#length-range-yellow {
+    width: 100%;
+    background-color: goldenrod;
+}
+
+#length-range {
+    width: 100%;
+}

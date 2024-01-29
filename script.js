@@ -40,6 +40,10 @@ const generatePassword = function () {
   if (isIncludeSymbols) password_elm_house = password_elm_house.concat(symbols);
   if (isIncludeNumbers) password_elm_house = password_elm_house.concat(numbers);
 
+    if (password_elm_house.length === 0) {
+      alert("Please choose you eant include");
+      return;
+    }
   // generate a password with marh.random method
 
   let password = Array.from(

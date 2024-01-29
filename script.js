@@ -3,7 +3,7 @@
 
 const password = document.querySelector(".password");
 const btnCopy = document.querySelector(".copy");
-const strong_level = document.querySelector("#strongness");
+const strongness_level = document.querySelector("#strongness");
 const password_range = document.querySelector("#length-range");
 const password_length = document.querySelector(".pass-length-text");
 const includeLower = document.querySelector("#lower-checkbox");
@@ -14,8 +14,6 @@ const btnGenerate = document.querySelector(".btn-generate");
 
 const generatePassword = function () {
   // getting data from the UI
-  const password_r = +password_range.value;
-  const strong_level = (password_r * 100) / 24;
   const password_len = +password_length.textContent;
   const isIncludeLower = includeLower.checked;
   const isIncludeUpper = includeUpper.checked;
@@ -70,7 +68,16 @@ const updatePassLength = function () {
   password_length.textContent = password_range.value;
 };
 
+const updatePassStrongness = function () {
+  let width = (password_length.textContent * 100) / 30;
+  strongness_level.style.width = `${width}%`;
+};
+
+const updateOnRange = function () {
+  updatePassLength();
+  updatePassStrongness();
+};
 // event handler
 btnGenerate.addEventListener("click", displayPassword);
 btnCopy.addEventListener("click", copyPassword);
-password_range.addEventListener("input", updatePassLength);
+password_range.addEventListener("input", updateOnRange);

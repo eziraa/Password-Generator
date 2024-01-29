@@ -1,4 +1,4 @@
-const intgers = [0, 1, 2, 3, 4, 5, 6, 7, 9];
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 9];
 const lowercase_letters = [
   "a",
   "b",
@@ -80,3 +80,13 @@ const symbols = [
   "}",
   "{",
 ];
+
+localStorage.removeItem("numbers");
+localStorage.removeItem("symbols");
+localStorage.removeItem("uppercase_letters");
+localStorage.removeItem("lowercase_letters");
+localStorage.setItem("numbers", JSON.stringify(numbers));
+localStorage.setItem("lowercase_letters", JSON.stringify(lowercase_letters));
+localStorage.setItem("uppercase_letters", JSON.stringify(uppercase_letters));
+localStorage.setItem("symbols", JSON.stringify(symbols));
+console.log(true);

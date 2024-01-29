@@ -55,10 +55,13 @@ const generatePassword = function () {
     }
   );
 
-  return password.join();
+  return password.join("");
 };
 
+const displayPassword = function () {
+  password.textContent = generatePassword();
+};
 
 btnGenerate.addEventListener("click", function () {
-  generatePassword();
+  displayPassword();
 });

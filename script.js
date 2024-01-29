@@ -57,3 +57,8 @@ const generatePassword = function () {
 
   return password.join();
 };
+
+
+btnGenerate.addEventListener("click", function () {
+  generatePassword();
+});

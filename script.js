@@ -10,3 +10,6 @@ const includeUpper = document.querySelector(".upper-checkbox");
 const includeSymbols = document.querySelector(".symbols-checkbox");
 const includeNumbers = document.querySelector(".numbers-checkbox");
 const btnGenerate = document.querySelector(". btn-generate");
+
+
+const generatePassword = function () {};

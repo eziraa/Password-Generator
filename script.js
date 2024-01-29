@@ -69,8 +69,11 @@ const updatePassLength = function () {
 };
 
 const updatePassStrongness = function () {
-  let width = (password_length.textContent * 100) / 30;
-  strongness_level.style.width = `${width}%`;
+    let width = (password_length.textContent * 100) / 30;
+    let color = width <= 20 ? "red" : width <= 50 ? "yellow" : "green";
+    strongness_level.style.width = `${width}%`;
+    strongness_level.style.backgroundColor = `${color}`;
+    
 };
 
 const updateOnRange = function () {

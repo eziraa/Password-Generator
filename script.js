@@ -66,6 +66,11 @@ const copyPassword = function () {
   navigator.clipboard.writeText(password.textContent);
 };
 
+const updatePassLength = function () {
+  password_length.textContent = password_range.value;
+};
+
 // event handler
 btnGenerate.addEventListener("click", displayPassword);
 btnCopy.addEventListener("click", copyPassword);
+password_range.addEventListener("input", updatePassLength);

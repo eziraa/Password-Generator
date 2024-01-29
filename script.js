@@ -62,6 +62,10 @@ const displayPassword = function () {
   password.textContent = generatePassword();
 };
 
-btnGenerate.addEventListener("click", function () {
-  displayPassword();
-});
+const copyPassword = function () {
+  navigator.clipboard.writeText(password.textContent);
+};
+
+// event handler
+btnGenerate.addEventListener("click", displayPassword);
+btnCopy.addEventListener("click", copyPassword);

@@ -36,11 +36,15 @@
 
 }
 
+.item:nth-child(n + 4) {
+    margin-top: 8px;
+}
 .main-container .item {
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
+    
 }
+
 
 .password-field {
     padding: 5px;
@@ -59,9 +63,17 @@
         border: 2px solid rgb(202, 198, 198);
 }
 
-#length-range-yellow {
+.strongness {
     width: 100%;
-    background-color: goldenrod;
+    margin-top: 5px;
+        height: 5px;
+        background-color: rgb(139, 139, 138);
+    }
+    
+    #strongness {
+        background-color: yellow;
+        width: 100px;
+        height: 5px;
 }
 
 #length-range {

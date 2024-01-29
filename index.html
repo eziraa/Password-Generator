@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passward-generator</title>
     <link rel="stylesheet" href="style.css">
+    
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h2 class="title">Passward Generator</h2>
+            <h2 class="title">Password Generator</h2>
         </div>
         <div class="main-item main-container">
             <div class="item password-field">
@@ -17,10 +19,10 @@
                 <span class="copy" > ❐ </span>
             </div>
             <div class="item strongness">
-               <span id="strongness">.</span>
+               <span id="strongness"></span>
             </div>
             <div class="item length-range">
-                <input type="range" id="length-range" name="length-range" min="0" max="100" value="50">
+                <input type="range" id="length-range" name="length-range" min="0" max="30" value="8">
             </div>
             <div class="item password-length">
                 <span class="pass-length-label">Passward length </span>
@@ -28,26 +30,24 @@
             </div>
             <div class="item lowercase">
                 <label for="lower-checkbox">Include Lowercase letters(a-z)</label>
-                <input type="checkbox" id="lower-checkbox" name="lower-checkbox">
+                <input type="checkbox" id="lower-checkbox" name="lower-checkbox" value="on">
             </div>
             <div class="item uppercase">
                 <label for="uppper-checkbox">Include Uppercase letters(A-Z)</label>
-                <input type="checkbox" id="upper-checkbox" name="upper-checkbox">
+                <input type="checkbox" id="upper-checkbox" name="upper-checkbox" value="on">
             </div>
             <div class="item numbers">
                 <label for="numbers-checkbox">Include numbers(0,9)</label>
-                <input type="checkbox" id="numbers-checkbox" name="numbers-checkbox">
+                <input type="checkbox" id="numbers-checkbox" name="numbers-checkbox" value="on">
             </div>
             <div class="item symbols">
                 <label for="symbols-checkbox">Include Numbers(@,%,...)</label>
-                <input type="checkbox" id="symbols-checkbox" name="symbols-checkbox">
+                <input type="checkbox" id="symbols-checkbox" name="symbols-checkbox" value="on">
             </div>
         </div>
         <div class="bottom_btn">
             <div class="btn btn-generate">Generate Password</div>
         </div>
     </div>
-    <script src="data.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
